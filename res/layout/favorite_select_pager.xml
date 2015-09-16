@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    
+     >
+
+        <LinearLayout
+            android:id="@+id/buttonlayout"
+            android:layout_width="222dp"
+            android:layout_marginTop="158dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/favorite_call_page_count"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:background="#88000000"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/fv_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/shoulder_contact_right" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="217dp"
+            >
+
+            <com.secmem.android.app.ViewAdapter.FavoriteCallPagerContainer
+                android:id="@+id/pager_container"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center" 
+                >
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="80dp"
+                    android:layout_height="102dp"
+                    android:layout_gravity="center" 
+                     >
+                </android.support.v4.view.ViewPager>
+
+            </com.secmem.android.app.ViewAdapter.FavoriteCallPagerContainer>
+        </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.secmem.android.app.ViewAdapter.IronThemeSelectPagerContainer
+        android:id="@+id/pager_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" >
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/swipeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="220dp"
+            android:src="@drawable/swipe_right_line" />
+
+        <ImageView
+            android:id="@+id/closeThemeSetting"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="251dp"
+            android:src="@drawable/alarm_off_btn_default_128" />
+
+        <TextView
+            android:id="@+id/mark_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="220dp"
+            android:text="War Machine\nMark II"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/mark_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="185dp"
+            android:text="1/5"
+            android:textColor="#ffffff" />
+    </com.secmem.android.app.ViewAdapter.IronThemeSelectPagerContainer>
+
+</RelativeLayout>

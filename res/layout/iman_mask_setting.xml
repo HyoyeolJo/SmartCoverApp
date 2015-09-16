@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.secmem.android.app.coverappb.coverappb" >
+
+
+    <ImageView
+        android:id="@+id/iron_mask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:src="@drawable/opacity_mask"
+       	android:layout_marginLeft="22dp"
+
+        />
+
+    <com.secmem.android.app.util.ColorPicker
+        android:id="@+id/picker"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="200dp" />
+
+    <RelativeLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/layout_bg_red" >
+
+        <RelativeLayout
+            android:id="@+id/opacity_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <TextView
+                android:id="@+id/opacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp" />
+
+            <com.secmem.android.app.util.OpacityBar
+                android:id="@+id/opacitybar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/opacity" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/light_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/opacity_layout"
+             >
+
+            <TextView
+                android:id="@+id/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp" />
+
+            <com.secmem.android.app.util.SaturationBar
+                android:id="@+id/saturationbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/light_layout"
+             >
+
+            <TextView
+                android:id="@+id/shade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp" />
+
+            <com.secmem.android.app.util.ValueBar
+                android:id="@+id/valuebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/shade" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

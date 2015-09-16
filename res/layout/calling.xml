@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/calling_message"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:background="@drawable/layout_bg_red" >
+
+        <TextView
+            android:id="@+id/calling_person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_below="@id/calling_person_name"
+            android:id="@+id/calling_person_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calling_animationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/calling_animation"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calling_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" >
+
+        <ImageView
+            android:id="@+id/calling_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/out_speaker_off" />
+
+        <ImageView
+            android:id="@+id/calling_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="143dp"
+            android:src="@drawable/finish_calling" />
+
+        <FrameLayout
+            android:id="@+id/playLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp" >
+
+            <ImageView
+                android:id="@+id/calling_person"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="59dp"
+                android:src="@drawable/person_icon" />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

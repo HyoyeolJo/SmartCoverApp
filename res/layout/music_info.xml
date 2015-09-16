@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+
+    >
+            
+    <RelativeLayout 
+        android:id="@+id/music_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/layout_bg_red"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        
+         <TextView 
+            android:id="@+id/music_song_name"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음악파일을 찾을 수 없습니다"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="#0ff0df"
+            android:textSize="20sp"
+            
+            />
+        <TextView 
+            android:layout_below="@id/music_song_name"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/music_singer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            />        
+        
+        
+    </RelativeLayout>
+       
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/music_info_layout"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/music_currentTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="10sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:textColor="#ffffff"
+            />
+        
+            <SeekBar 
+
+	            android:id="@+id/music_seekBar"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="8"
+            	android:layout_gravity="center_vertical"
+            />
+            
+       <TextView
+
+            android:id="@+id/music_totalTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="00:00"
+            android:textSize="10sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            />
+        
+        
+    </LinearLayout>
+            
+
+</RelativeLayout>

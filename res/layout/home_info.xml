@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/home_infomation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/information" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/battry_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery"
+                android:textColor="#e5c25e"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/battry_info"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battry_info_name"
+                android:gravity="right"
+                android:text="connected"
+                android:textColor="#ffffff"
+                android:background="#88000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/network_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/battry_info"
+                android:layout_marginTop="2dp"
+                android:text="network X"
+                android:textColor="#e5c25e"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/ram_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/network_info"
+                android:layout_marginTop="5dp"
+                android:text="RAM"
+                android:textColor="#e5c25e"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ram_info"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/network_info"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ram_info_name"
+                android:gravity="right"
+                android:textColor="#ffffff"
+                android:background="#88000000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

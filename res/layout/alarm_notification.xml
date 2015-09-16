@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <com.secmem.android.app.ViewAdapter.NotificationPagerContainer
+        android:id="@+id/current_pager_container"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="175dp"
+         android:layout_marginLeft="60dp"
+         android:background="@drawable/layout_bg_red"
+ >
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            
+             >
+        </android.support.v4.view.ViewPager>
+    </com.secmem.android.app.ViewAdapter.NotificationPagerContainer>
+
+    <ImageView
+        android:id="@+id/current_notification_alarm"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="185dp" />
+
+    <RelativeLayout
+        android:id="@+id/detail_noti_box"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/pager_container"
+        android:layout_alignLeft="@+id/pager_container"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="220dp" >
+    </RelativeLayout>
+
+</RelativeLayout>

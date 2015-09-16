@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <FrameLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/arc_circle_background"
+        >
+        
+      <ImageView 
+      android:id="@+id/arc7_background"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:src="@drawable/arc7_background"
+      android:layout_centerHorizontal="true"/>
+          
+     <ImageView 
+      android:id="@+id/arc7_outer"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:src="@drawable/arc7_outer"
+      android:layout_centerHorizontal="true"/>
+     
+     <ImageView android:id="@+id/arc7_main_torr"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/arc7_main_torr"
+       />
+         
+     
+    <ImageView android:id="@+id/arc7_light"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/arc7_light"
+       />
+ 
+
+    
+    </FrameLayout>
+
+</RelativeLayout>

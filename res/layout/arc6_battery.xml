@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <FrameLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:background="@drawable/arc_circle_background"
+        >
+        
+      <ImageView 
+      android:id="@+id/arc6_tae"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:src="@drawable/arc6_tae"
+      android:layout_centerHorizontal="true"/>
+          
+     <ImageView 
+      android:id="@+id/arc6_outer"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"/>
+     
+    <ImageView android:id="@+id/arc6_yellow_light"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/arc6_yellow_light"
+       />
+    
+     <ImageView android:id="@+id/arc6_light"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/arc6_light"
+       />  
+ 
+    <ImageView android:id="@+id/arc6_inner"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:layout_centerHorizontal="true" />    
+
+    <ImageView android:id="@+id/arc6_gori"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:layout_centerHorizontal="true" 
+      android:src="@drawable/arc6_gori"
+      />    
+    
+    <ImageView android:id="@+id/arc6_solar"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:gravity="center"
+      android:layout_centerHorizontal="true" />
+
+    
+    </FrameLayout>
+
+</RelativeLayout>

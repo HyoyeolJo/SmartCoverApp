@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arc_circle_background" >
+
+        <ImageView
+            android:id="@+id/arc4_outer_alpha"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/arc4_outer" />
+
+        <ImageView
+            android:id="@+id/arc4_gear_mid"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/arc4_gear_mid" />
+
+        <ImageView
+            android:id="@+id/arc4_gear1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:src="@drawable/arc4_gear1" />
+
+        <ImageView
+            android:id="@+id/arc4_gear2"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:src="@drawable/arc4_gear2" />
+
+        <ImageView
+            android:id="@+id/arc4_gear3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:src="@drawable/arc4_gear3" />
+
+        <ImageView
+            android:id="@+id/arc4_gear4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="37dp"
+            android:gravity="center"
+            android:src="@drawable/arc4_gear4" />
+
+        <ImageView
+            android:id="@+id/arc4_gear5"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:src="@drawable/arc4_gear5" />
+
+        <ImageView
+            android:id="@+id/arc4_gear6"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:src="@drawable/arc4_gear6" />
+
+        <ImageView
+            android:id="@+id/arc4_main_gear"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/arc4_main_gear" />
+
+        <ImageView
+            android:id="@+id/arc4_inner"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/arc4_inner" />
+    </FrameLayout>
+
+</RelativeLayout>

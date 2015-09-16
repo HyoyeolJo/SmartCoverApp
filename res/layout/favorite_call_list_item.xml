@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="101dp" 
+   
+    >
+            
+    <RelativeLayout 
+        android:id="@+id/people_select_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_red"
+        android:layout_centerHorizontal="true"
+
+        
+        >
+        <TextView 
+           
+            android:id="@+id/favorite_call_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="김일식입니다!!!"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:ellipsize="marquee"
+        	android:marqueeRepeatLimit="marquee_forever"
+        	android:focusable="true"
+            />       
+            </RelativeLayout> 
+            
+        <ImageView 
+            android:id="@+id/peopleImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/people_select_info"
+            android:src="@drawable/icon_cd"
+            android:layout_centerHorizontal="true"
+            />
+</RelativeLayout>
